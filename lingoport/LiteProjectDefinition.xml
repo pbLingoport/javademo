@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!-- see  http://wiki.lingoport.com/index.php5?title=Globalyzer_Lite#The_.globalyzerrc_File -->
+<gzproject>
+  <login>
+    <username></username>
+    <password></password>
+    <server>https://www.globalyzer.com/gzserver</server>
+    <use-local-rulesets>true</use-local-rulesets>
+    <optional>
+      <proxy-user></proxy-user>
+      <proxy-password></proxy-password>
+      <proxy-host></proxy-host>
+      <proxy-port></proxy-port>
+    </optional>
+  </login>
+  <project-path>C:/Users/Olivier/workspace/litedemo/javalite</project-path>
+  <project-name>litedemo</project-name>
+  <report-path>globalyzer-lite-reports</report-path>
+  <report-type>ScanDetailedXML</report-type>
+  <data-dictionary-location>C:/Users/Olivier/.globalyzer</data-dictionary-location>
+  <filter-with-dictionary>true</filter-with-dictionary>
+  <scan-timeout>120</scan-timeout>
+  <fail-scan-on-first-scanning-error>true</fail-scan-on-first-scanning-error>
+  <scans>
+    <scan>
+      <scan-name>JS Scan</scan-name>
+      <ruleset-name>5.2 JS</ruleset-name>
+      <ruleset-owner>olibouban@lingoport.com</ruleset-owner>
+      <encoding>systemDefault</encoding>
+      <checks>
+        <embedded-strings>true</embedded-strings>
+        <locale-sensitive-methods>true</locale-sensitive-methods>
+        <general-patterns>true</general-patterns>
+        <static-file-references>true</static-file-references>
+      </checks>
+      <comments>
+        <todo>GLOBALYZER_TODO</todo>
+        <ignore-next-line>GLOBALYZER_IGNORE_NEXT_LINE</ignore-next-line>
+        <start-ignore>GLOBALYZER_START_IGNORE</start-ignore>
+        <end-ignore>GLOBALYZER_END_IGNORE</end-ignore>
+      </comments>
+      <scan-items>
+        <item>src</item>
+      </scan-items>
+    </scan>
+    <scan>
+      <scan-name>Java Scan</scan-name>
+      <ruleset-name>5.2 Java</ruleset-name>
+      <ruleset-owner>olibouban@lingoport.com</ruleset-owner>
+      <encoding>systemDefault</encoding>
+      <checks>
+        <embedded-strings>true</embedded-strings>
+        <locale-sensitive-methods>true</locale-sensitive-methods>
+        <general-patterns>true</general-patterns>
+        <static-file-references>true</static-file-references>
+      </checks>
+      <comments>
+        <todo>GLOBALYZER_TODO</todo>
+        <ignore-next-line>GLOBALYZER_IGNORE_NEXT_LINE</ignore-next-line>
+        <start-ignore>GLOBALYZER_START_IGNORE</start-ignore>
+        <end-ignore>GLOBALYZER_END_IGNORE</end-ignore>
+      </comments>
+      <scan-items>
+        <item>src</item>
+      </scan-items>
+    </scan>
+  </scans>
+</gzproject>
